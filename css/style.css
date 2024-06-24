@@ -14813,9 +14813,97 @@ input.cart-plus-minus-box {
 }
 
 
+/* Add some space between the image and the button */
+.toggle-image {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Style the toggle button with rounded corners and a hover effect */
+.btn-toggle {
+  background-color: #37597e; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Removes default border */
+  padding: 10px 20px; /* Button padding */
+  border-radius: 28px; /* Rounded corners */
+  cursor: pointer; /* Cursor changes to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn-toggle:hover {
+  background-color: #213a54; /* Darker background on hover */
+}
 
 
+/* style.css */
 
+.apartments-plan-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.switch-container {
+  margin-top: 20px; /* Adjust spacing between image and switch */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.switch-label {
+  margin-right: 10px;
+  font-size: 14px;
+  color: #333;
+  margin-left: 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #4e799c;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
 
 
 

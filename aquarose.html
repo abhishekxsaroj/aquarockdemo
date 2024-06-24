@@ -465,82 +465,136 @@
     </div>
     <!-- ABOUT US AREA END -->
 
-
 <!-- APARTMENTS PLAN AREA START -->
 <div class="ltn__apartments-plan-area pt-115 pb-90 mb-12">
     <div class="container">
-        
-            <div class="col-lg-12">
-                <div class="section-title-area ltn__section-title-2--- text-center">
-                    <h6 class="section-subtitle section-subtitle-2--- ltn__secondary-color">Apartment Sketch</h6>
-                    <h1 class="section-title">Apartments Plan</h1>
-                </div>
-                <div class="ltn__tab-menu ltn__tab-menu-3 ltn__tab-menu-top-right-- text-uppercase--- text-center">
-                    <div class="nav">
-                        <a data-bs-toggle="tab" href="#liton_tab_3_1">1BHK Unit Plan</a>
-                        <a class="active show"  data-bs-toggle="tab" href="#liton_tab_3_2">1BHK Unit Plan</a>
-                        <a data-bs-toggle="tab" href="#liton_tab_3_3" class="">2BHK Unit Plan</a>
-                        <a data-bs-toggle="tab" href="#liton_tab_3_4" class="">Floor Plan</a>
-                    </div>
-                </div>
-                <div class="tab-content">
-                    <div class="tab-pane fade" id="liton_tab_3_1">
-                        <div class="ltn__apartments-tab-content-inner">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <div class="apartments-plan-img">
-                                        <img src="img/others/1bhklandscape2.png" alt="#">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade active show" id="liton_tab_3_2">
-                        <div class="ltn__product-tab-content-inner">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <div class="apartments-plan-img">
-                                        <img src="img/others/1bhklandscape.png" alt="#">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="liton_tab_3_3">
-                        <div class="ltn__product-tab-content-inner">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <div class="apartments-plan-img">
-                                        <img src="img/others/2bhklandscape.png" alt="#">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="liton_tab_3_4">
-                        <div class="ltn__product-tab-content-inner">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <div class="apartments-plan-img">
-                                        <img src="img/others/floorplanlandscape.png" alt="#">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <br><br>
-                <!-- Button Section Start -->
-                <div class="button-section text-center">
-                    <a href="#" class="theme-btn-1 btn btn-effect-1" onclick="openModal(event)">Enquire Now</a>
-                    <a href="#" class="btn btn-transparent btn-effect-3">Download Brochure</a>
-                </div>
-                <!-- Button Section End -->
+        <div class="col-lg-12">
+            <div class="section-title-area ltn__section-title-2--- text-center">
+                <h6 class="section-subtitle section-subtitle-2--- ltn__secondary-color">Apartment Sketch</h6>
+                <h1 class="section-title">Apartments Plan</h1>
             </div>
+            <div class="ltn__tab-menu ltn__tab-menu-3 ltn__tab-menu-top-right-- text-uppercase--- text-center">
+                <div class="nav">
+                    <a data-bs-toggle="tab" href="#liton_tab_3_1">1BHK Unit Plan</a>
+                    <a class="active show" data-bs-toggle="tab" href="#liton_tab_3_2">1BHK Unit Plan</a>
+                    <a data-bs-toggle="tab" href="#liton_tab_3_3" class="">2BHK Unit Plan</a>
+                    <a data-bs-toggle="tab" href="#liton_tab_3_4" class="">Floor Plan</a>
+                </div>
+            </div>
+            <div class="tab-content">
+                <!-- Tab Pane 1: 1BHK Unit Plan -->
+                <div class="tab-pane fade" id="liton_tab_3_1">
+                    <div class="ltn__apartments-tab-content-inner">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="apartments-plan-container">
+                                    <div class="apartments-plan-img">
+                                        <img id="image1" src="img/others/1bhklandscape2.png" alt="#">
+                                    </div>
+                                    <!-- Switch Toggle with Label -->
+                                    <div class="switch-container">
+                                        <label class="switch-label" for="toggleImage1">2D Layout</label>
+                                        <label class="switch">
+                                            <input type="checkbox" id="toggleImage1" onchange="toggleImage('image1', 'img/others/1bhklandscape2.png', 'img/others/1bhk3d2.png')">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <label class="switch-label" for="toggleImage1">  3D Layout</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tab Pane 2: 1BHK Unit Plan (Active) -->
+                <div class="tab-pane fade active show" id="liton_tab_3_2">
+                    <div class="ltn__product-tab-content-inner">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="apartments-plan-container">
+                                    <div class="apartments-plan-img">
+                                        <img id="image2" src="img/others/1bhklandscape.png" alt="#">
+                                    </div>
+                                    <!-- Switch Toggle with Label -->
+                                    <div class="switch-container">
+                                        <label class="switch-label" for="toggleImage2">2D Layout</label>
+                                        <label class="switch">
+                                            <input type="checkbox" id="toggleImage2" onchange="toggleImage('image2', 'img/others/1bhklandscape.png', 'img/others/1bhk3d2.png')">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <label class="switch-label" for="toggleImage1">  3D Layout</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tab Pane 3: 2BHK Unit Plan -->
+                <div class="tab-pane fade" id="liton_tab_3_3">
+                    <div class="ltn__product-tab-content-inner">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="apartments-plan-container">
+                                    <div class="apartments-plan-img">
+                                        <img id="image3" src="img/others/2bhklandscape.png" alt="#">
+                                    </div>
+                                    <!-- Switch Toggle with Label -->
+                                    <div class="switch-container">
+                                        <label class="switch-label" for="toggleImage3">2D Layout</label>
+                                        <label class="switch">
+                                            <input type="checkbox" id="toggleImage3" onchange="toggleImage('image3', 'img/others/2bhklandscape.png', 'img/others/2bhk3d2.png')">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <label class="switch-label" for="toggleImage1">  3D Layout</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tab Pane 4: Floor Plan -->
+                <div class="tab-pane fade" id="liton_tab_3_4">
+                    <div class="ltn__product-tab-content-inner">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="apartments-plan-container">
+                                    <div class="apartments-plan-img">
+                                        <img id="image4" src="img/others/floorplanlandscape.png" alt="#">
+                                    </div>
+                                    <!-- Switch Toggle with Label -->
+                                    <div class="switch-container">
+                                        <label class="switch-label" for="toggleImage4">2D Layout</label>
+                                        <label class="switch">
+                                            <input type="checkbox" id="toggleImage4" onchange="toggleImage('image4', 'img/others/floorplanlandscape.png', 'img/others/floorplan3d2.png')">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <label class="switch-label" for="toggleImage1">  3D Layout</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            <br><br>
+            <!-- Button Section Start -->
+            <div class="button-section text-center">
+                <a href="#" class="theme-btn-1 btn btn-effect-1" onclick="openModal(event)">Enquire Now</a>
+                <a href="#" class="btn btn-transparent btn-effect-3">Download Brochure</a>
+            </div>
+            <!-- Button Section End -->
         </div>
     </div>
-    <!-- APARTMENTS PLAN AREA END -->
+</div>
+<!-- APARTMENTS PLAN AREA END -->
+
+<script>
+    function toggleImage(imageId, src1, src2) {
+        var img = document.getElementById(imageId);
+        img.src = img.src.includes(src1) ? src2 : src1;
+    }
+</script>
+
 
     <!-- Enquire Now Modal -->
 <div id="enquireModal" class="modal">
@@ -1039,7 +1093,7 @@
             <div class="row ltn__category-slider-active--- slick-arrow-1 justify-content-center">
                 <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                     <div class="ltn__category-item ltn__category-item-5 ltn__category-item-5-2 text-center---">
-                        <a href="shop.html">
+                        <a href="">
                             <span class="category-icon"><i class="flaticon-car"></i></span>
                             <span class="category-number">01</span>
                             <span class="category-title">Parking Space</span>
@@ -1052,7 +1106,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                     <div class="ltn__category-item ltn__category-item-5 ltn__category-item-5-2 text-center---">
-                        <a href="shop.html">
+                        <a href="">
                             <span class="category-icon"><i class="flaticon-house-3"></i></span>
                             <span class="category-number">02</span>
                             <span class="category-title">Supermarket</span>
@@ -1065,7 +1119,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                     <div class="ltn__category-item ltn__category-item-5 ltn__category-item-5-2 text-center---">
-                        <a href="shop.html">
+                        <a href="">
                             <span class="category-icon"><i class="flaticon-secure-shield"></i></span>
                             <span class="category-number">03</span>
                             <span class="category-title">Private Security</span>
@@ -1078,7 +1132,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                     <div class="ltn__category-item ltn__category-item-5 ltn__category-item-5-2 text-center---">
-                        <a href="shop.html">
+                        <a href="">
                             <span class="category-icon"><i class="flaticon-stethoscope"></i></span>
                             <span class="category-number">04</span>
                             <span class="category-title">Medical Center</span>
@@ -1091,7 +1145,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                     <div class="ltn__category-item ltn__category-item-5 ltn__category-item-5-2 text-center---">
-                        <a href="shop.html">
+                        <a href="">
                             <span class="category-icon"><i class="flaticon-office"></i></span>
                             <span class="category-number">05</span>
                             <span class="category-title">Gymnasium</span>
@@ -1104,7 +1158,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                     <div class="ltn__category-item ltn__category-item-5 ltn__category-item-5-2 text-center---">
-                        <a href="shop.html">
+                        <a href="">
                             <span class="category-icon"><i class="flaticon-heart"></i></span>
                             <span class="category-number">06</span>
                             <span class="category-title">Yoga Center</span>
@@ -1117,7 +1171,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                     <div class="ltn__category-item ltn__category-item-5 ltn__category-item-5-2 text-center---">
-                        <a href="shop.html">
+                        <a href="">
                             <span class="category-icon"><i class="flaticon-home-2"></i></span>
                             <span class="category-number">07</span>
                             <span class="category-title">Smart Homes</span>
@@ -1130,7 +1184,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                     <div class="ltn__category-item ltn__category-item-5 ltn__category-item-5-2 text-center---">
-                        <a href="shop.html">
+                        <a href="">
                             <span class="category-icon"><i class="flaticon-slider"></i></span>
                             <span class="category-number">08</span>
                             <span class="category-title">Kid’s Playland</span>
